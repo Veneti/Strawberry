@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Strawberry from '../images/strawberry.png'
+import '../App.css';
 
 class strawberry extends Component {
     render() {
