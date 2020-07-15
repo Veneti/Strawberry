@@ -59,6 +59,10 @@ h1 {
   text-transform: lowercase;
   font-family: 'Josefin Sans', sans-serif;
 
+  margin-bottom: 0;
+  line-height: 100px;
+  font-size: 100px;
+
   background: #fdfdfd;
   background-color: #ffffff;
   background: conic-gradient(
@@ -121,4 +125,17 @@ h1 {
 
 .welcome-header {
   text-align: center;
+}
+
+.welcome-description {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+
+  color: #E22925;
+
+  margin: 0px 0px 50px 0px;
 }
