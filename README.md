@@ -1,5 +1,5 @@
 # Hack Day Team
-* TEAM NAME
+* Strawberry
 
 # Team Members
 * Cady Baltz (vaakfy)
@@ -11,6 +11,6 @@
 * Hassana Saade (vaauwi)
 
 # Hack Description
-DESCRIPTION
+Bite sized insurance 
 
 << Other Additional Details Here >>
