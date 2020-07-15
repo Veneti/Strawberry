@@ -16,9 +16,6 @@ class template extends Component {
 			<div>
 				<h1 className={classes.example}>Hello!</h1>
 				<a href="/strawberry">Link to strawberry</a>
-				<div class="-oneX-row -oneX-col-6">
-					<button type="submit" class="-oneX-btn-primary">Submit</button>
-				</div>
             </div>
 		);
 	}
