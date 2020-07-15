@@ -16,7 +16,7 @@ class welcome extends Component {
 			<div>
 				<header class="welcome-header">
 					<img src={Strawberry} alt="logo" style={{ "padding-top": "40px" }} />
-					<h1 class="rainbow-text">Welcome to Strawberry</h1>
+					<h1 class="animated-text">Welcome to Strawberry</h1>
 					<svg
 						width="209"
 						height="82"
