@@ -16,7 +16,10 @@ class welcome extends Component {
 			<div>
 				<header class="welcome-header">
 					<img src={Strawberry} alt="logo" style={{ "padding-top": "40px" }} />
+
 					<h1 class="animated-text">Welcome to Strawberry</h1>
+          <h3 class="welcome-description">a bite-size intro to insurance</h3>
+
 					<svg
 						width="209"
 						height="82"
