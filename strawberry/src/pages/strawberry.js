@@ -25,4 +25,3 @@ class strawberry extends Component {
 	}
 }
 export default (strawberry);
-
