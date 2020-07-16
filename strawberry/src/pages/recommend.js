@@ -3,8 +3,10 @@ import React, { Component } from "react";
 import withStyles from "@material-ui/core/styles/withStyles";
 import "../style.scss";
 import "../App.css";
-import car from "../images/car.png";
 import strawberry from "../images/strawberry-logo.png";
+import auto from "../images/auto-insurance.png";
+import rent from "../images/renters-insurance.png";
+import life from "../images/life-insurance.png";
 import { withTheme } from "@material-ui/core";
 
 const styles = (theme) => ({
@@ -43,14 +45,16 @@ class recommend extends Component {
 
 							<div class="circle_inner">
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc1.png" />
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc1.png" /> */}
+                  {/* <img src={auto}/> */}
 								</div>
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc2.png" />
-									{/* <img src={car} /> */}
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc2.png" /> */}
+									<img src={auto}/>
 								</div>
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc3.png" />
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc3.png" /> */}
+                  {/* <img src={auto}/> */}
 								</div>
 							</div>
 							<div class="content_shadow"></div>
@@ -67,13 +71,14 @@ class recommend extends Component {
 							</div>
 							<div class="circle_inner">
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc4.png" />
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc4.png" /> */}
 								</div>
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc5.png" />
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc5.png" /> */}
+                  <img src={rent}/>
 								</div>
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc6.png" />
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc6.png" /> */}
 								</div>
 							</div>
 							<div class="content_shadow"></div>
@@ -87,13 +92,14 @@ class recommend extends Component {
 							</div>
 							<div class="circle_inner">
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc7.png" />
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc7.png" /> */}
 								</div>
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc8.png" />
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc8.png" /> */}
+                  <img src={life}/>
 								</div>
 								<div class="circle_inner__layer">
-									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc9.png" />
+									{/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc9.png" /> */}
 								</div>
 							</div>
 							<div class="content_shadow"></div>
