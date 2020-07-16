@@ -1,5 +1,4 @@
-# Hack Day Team
-* Strawberry
+# Strawberry
 * Bite-sized insurance
 
 
