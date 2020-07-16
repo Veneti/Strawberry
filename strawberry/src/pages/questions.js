@@ -2,21 +2,29 @@ import React, { Component } from 'react';
 import withStyles from '@material-ui/core/styles/withStyles';
 import { Grid, Container} from '@material-ui/core'
 import Jake from '../components/jake'
+import SpeechBubble1 from '../images/bubble1.png'
 import './questionStyles.css';
-var phantom = {
-    display: 'block',
-    padding: '20px',
-    height: '200px',
-    width: '90%',
+var speech = {
+    padding: "20px",
+    position: "fixed",
+    right: "250px",
+    bottom: "100px",
+    width: "15%",
   }
 const styles = (theme) => ({
     container: {
-        width: "80%",
+        width: "70%",
         height: "100vh",
     },
     container2: {
         width: "80%"
-    }
+	},
+	cornerImage: {
+		right: "50px",
+		bottom: "100px",
+		width: "250px",
+		align: "right"
+	}
 });
 class questions extends Component {
     render() {
@@ -31,6 +39,9 @@ class questions extends Component {
                                 <option>No</option>
                             </select>
                         </div>
+							<div>
+								<img src = {SpeechBubble1} style={speech} className={classes.cornerImage}/>
+							</div>
                	</Container>
 				<Container className={classes.container}>
                         <h1 className="header" style={{fontSize:"100px", color:"#f01716"}}>do you have financial dependents?</h1>
