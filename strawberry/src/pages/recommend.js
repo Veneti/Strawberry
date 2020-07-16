@@ -15,12 +15,17 @@ const styles = (theme) => ({
     marginTop: 10,
     paddingTop: 80,
     color: 'white', 
-	},
+  },
+  format: {
+    textAlign: 'center'
+  }
 });
 class recommend extends Component {
 	render() {
 		const { classes } = this.props;
 		return (
+      <div className={classes.format}>
+
 			<div class="page">
 				<h1 className={classes.header}>
 					<h1 class="animated-text">Recommended Coverages!</h1>
@@ -91,67 +96,10 @@ class recommend extends Component {
 						<div class="content_shadow"></div>
 					</div>
 				</div>
-				<div class="content">
-					<div class="circle">
-						<div class="circle_title">
-							<h2>Health Insurance</h2>
-							<h3>Insured on all planes</h3>
-						</div>
-						<div class="circle_inner">
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc7.png" />
-							</div>
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc8.png" />
-							</div>
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc9.png" />
-							</div>
-						</div>
-						<div class="content_shadow"></div>
-					</div>
-				</div>
-				<div class="content">
-					<div class="circle">
-						<div class="circle_title">
-							<h2>Pet Insurance</h2>
-							<h3>Insured on all planes</h3>
-						</div>
-						<div class="circle_inner">
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc7.png" />
-							</div>
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc8.png" />
-							</div>
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc9.png" />
-							</div>
-						</div>
-						<div class="content_shadow"></div>
-					</div>
-				</div>
-				<div class="content">
-					<div class="circle">
-						<div class="circle_title">
-							<h2>Plane Insurance</h2>
-							<h3>Insured on all planes</h3>
-						</div>
-						<div class="circle_inner">
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc7.png" />
-							</div>
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc8.png" />
-							</div>
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc9.png" />
-							</div>
-						</div>
-						<div class="content_shadow"></div>
-					</div>
-				</div>
+				
 			</div>
+    </div>
+
 		);
 	}
 }
