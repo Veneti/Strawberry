@@ -3,7 +3,6 @@ import strawberry from './pages/strawberry';
 import template from './pages/template';
 import welcome from './pages/welcome';
 import recommend from './pages/recommend';
-import explanation from './pages/explanation';
 import questions from './pages/questions';
 import AutoPage from './pages/AutoPage';
 import categories from './pages/categories';
