@@ -1,0 +1,28 @@
+.dropdown {
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+    width: 30%;
+    text-align: center;
+  } 
+
+  .arrow {
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    top: 20%;
+    transform: translateY(20%);
+    width: 30%;
+    text-align: center;
+  } 
+  .header {
+    position: relative;
+    top: 20%;
+    transform: translateY(-20%);
+    color: 'red';
+    font-size: '100px';
+    font-family: "Josefin Sans";
+    text-align: "left";
+  }
