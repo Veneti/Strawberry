@@ -20,6 +20,7 @@ import './questionStyles.css';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    fontFamily: "Josefin Sans",
   },
   media: {
     height: 0,
@@ -39,22 +40,23 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "20px",
   },
   size:{
-      width: "225px",
-      height: "225px",
-      float:"left",
-      marginLeft: "10px",
+    width: "225px",
+    height: "225px",
+    float:"left",
+    marginLeft: "30px",
   },
   container: {
     height: "80vh"
   },
   header: {
-	color: "#E11313",
-	fontFamily: "Josefin Sans",
-    fontSize: "60px",
-    marginTop: "85px",
+  	color: "#E22925",
+  	fontFamily: "Josefin Sans",
+    fontSize: "80px",
+    marginTop: "150px",
     marginBottom: "40px",
     marginLeft: "30px",
-	textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25);"
+  	textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25);",
+    textTransform: "lowercase"
   }
 }));
 
@@ -64,7 +66,7 @@ export default function ReviewCard() {
   const [expanded2, setExpanded2] = React.useState(false);
   const [expanded3, setExpanded3] = React.useState(false);
   const [expanded4, setExpanded4] = React.useState(false);
-  
+
   const handleExpandClick1 = () => {
     setExpanded1(!expanded1);
   };
@@ -84,7 +86,7 @@ export default function ReviewCard() {
     <h1 className={classes.header}>Categories</h1>
       <div className={classes.size}>
         <Card className={classes.root}>
-          <CardHeader title="Liability" />
+          <CardHeader title="liability" style={{ 	'fontFamily' : "Josefin Sans" }}/>
           <CardMedia
             className={classes.media}
             image={infoCard}
@@ -104,7 +106,6 @@ export default function ReviewCard() {
           </CardActions>
           <Collapse in={expanded1} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>Information:</Typography>
               <Typography paragraph>
                 - Covers cost of damages including medical fees
               </Typography>
@@ -123,11 +124,11 @@ export default function ReviewCard() {
 
       <div className={classes.size}>
         <Card className={classes.root}>
-          <CardHeader title="Collision" />
+          <CardHeader title="collision" />
           <CardMedia
             className={classes.media}
             image={carCrash}
-            title="Collision"
+            title="collision"
           />
           <CardActions disableSpacing>
             <IconButton
@@ -143,9 +144,8 @@ export default function ReviewCard() {
           </CardActions>
           <Collapse in={expanded2} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>Information:</Typography>
               <Typography paragraph>
-                - This covers the repairs needed for your car when you get in an accident 
+                - This covers the repairs needed for your car when you get in an accident
               </Typography>
               <Typography paragraph>
                 - Older cars with low values do not benefit as much from collision coverage
@@ -160,11 +160,11 @@ export default function ReviewCard() {
 
       <div className={classes.size}>
         <Card className={classes.root}>
-          <CardHeader title="Comprehensive" />
+          <CardHeader title="comprehensive" />
           <CardMedia
             className={classes.media}
             image={comprehensive}
-            title="Comprehensive"
+            title="comprehensive"
           />
           <CardActions disableSpacing>
             <IconButton
@@ -180,15 +180,14 @@ export default function ReviewCard() {
           </CardActions>
           <Collapse in={expanded3} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>Information:</Typography>
               <Typography paragraph>
-                - This type of insurance covers incidents rather than accidents 
+                - This type of insurance covers incidents rather than accidents
               </Typography>
               <Typography paragraph>
                 - For example, weather damage will be covered under this category, but car crashes are not
               </Typography>
               <Typography paragraph>
-                - If your car is easily replaceable, this may not be necessary 
+                - If your car is easily replaceable, this may not be necessary
               </Typography>
             </CardContent>
           </Collapse>
@@ -196,11 +195,11 @@ export default function ReviewCard() {
       </div>
       <div className={classes.size}>
         <Card className={classes.root}>
-          <CardHeader title="Uninsured" />
+          <CardHeader title="uninsured" />
           <CardMedia
             className={classes.media}
             image={uninsured}
-            title="Uninsured"
+            title="uninsured"
           />
           <CardActions disableSpacing>
             <IconButton
@@ -216,25 +215,38 @@ export default function ReviewCard() {
           </CardActions>
           <Collapse in={expanded4} timeout="auto" unmountOnExit>
             <CardContent>
-              <Typography paragraph>Information:</Typography>
               <Typography paragraph>
                 - Covers your excess balance if damages exceed limits
               </Typography>
               <Typography paragraph>
-                - This is recommended because it is relatively cheap considering the alternatives 
+                - This is recommended because it is relatively cheap considering the alternatives
               </Typography>
               <Typography paragraph>
-                - Uninsured coverage is useful because it protects you at much lower rates than normal coverage 
+                - Uninsured coverage is useful because it protects you at much lower rates than normal coverage
               </Typography>
             </CardContent>
           </Collapse>
         </Card>
       </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
 
  <div className="arrow2">
       <a href="/agents">
-     
-    <svg 
+
+    <svg
 
   						width="209"
   						height="82"

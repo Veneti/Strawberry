@@ -4,23 +4,24 @@ import "../App.css";
 
 const styles = (theme) => ({
   example: {
-    color: "red",
+    color: "#E22925",
     //text-align -> textAlign
     textAlign: "center",
   },
   header: {
-	color: "#E11313",
-	fontFamily: "Josefin Sans",
-	fontSize: "100px",
-	marginTop: "270px",
-	marginBottom: "160px",
-	textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25);"
+  	color: "#E22925",
+  	fontFamily: "Josefin Sans",
+  	fontSize: "100px",
+  	marginTop: "270px",
+  	marginBottom: "160px",
+  	textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+    textTransform: "lowercase"
   },
   center: {
-	textAlign: "center",
+  	textAlign: "center",
   },
   rightside:{
-	marginLeft: "500px"
+  	marginLeft: "500px"
   }
 });
 class AutoPage extends Component {
@@ -31,7 +32,7 @@ class AutoPage extends Component {
         <h1 className={classes.header}>Auto Insurance</h1>
 		<div className={classes.rightside}>
 		<a href="/categories">
-		<svg 
+		<svg
   						width="209"
   						height="82"
   						viewBox="0 0 209 82"

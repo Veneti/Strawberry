@@ -36,7 +36,10 @@ class agents extends Component {
 		return (
 			<div>
                 <Container className={classes.container}>
-				<h1 className="header" style={{fontSize:"75px", textAlign: "center",color:"#f01716"}}>find a state farm agent near 75082</h1>
+				<h1 className="header" style={{fontSize:"75px", textAlign: "center",color:"#f01716", "text-shadow" : "0px 4px 4px rgba(0, 0, 0, 0.25)"
+}}>find a state farm agent near 75082</h1>
+                <br/>
+                <br/>
                 <br/>
                 <br/>
                 <br/>
