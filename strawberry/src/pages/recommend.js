@@ -14,8 +14,8 @@ const styles = (theme) => ({
 		textAlign: "center", // <-- the magic
 		fontWeight: "bold",
 		fontSize: 15,
-		marginTop: 10,
-		paddingTop: 80,
+		marginTop: 0,
+		paddingTop: 200,
 		color: "white",
 	},
 	format: {

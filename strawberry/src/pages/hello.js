@@ -15,7 +15,7 @@ const styles = (theme) => ({
 		textAlign: "left", // <-- the magic
 		fontWeight: "bold",
 		fontSize: 150,
-		marginTop: 100,
+		marginTop: 125,
     marginLeft: 250,
 		color: "red",
 	},
