@@ -36,7 +36,7 @@ class hello extends Component {
 		return (
 			<div>
 				<header className="welcome-header">
-					<header className={classes.header}>Hello!</header>
+						<header className={classes.header}>Hello!</header>
 					<div className={classes.container}>
 						<div class="-oneX-widget">
 							<label for="conv-textfield" class="-oneX-textfield__label">
@@ -54,20 +54,20 @@ class hello extends Component {
 							<label for="conv-textfield" class="-oneX-textfield__label">
 								What is your age?
 							</label>
-									<label for="name" class="-oneX-dropdown__floatingLabel">
-										Age Group
-									</label>
-									<select id="name" type="text" class="-oneX-dropdown">
-										<option value=""></option>
-										<option value="option1">15-18</option>
-										<option value="option2">18-21</option>
-										<option value="option3">21-24</option>
-                    <option value="option4">24-27</option>
-                    <option value="option5">27-30</option>
-										<option value="option6">30-33</option>
-                    <option value="option7">33-36</option>
-                    <option value="option8">36+</option>
-									</select>
+							<label for="name" class="-oneX-dropdown__floatingLabel">
+								Age Group
+							</label>
+							<select id="name" type="text" class="-oneX-dropdown">
+								<option value=""></option>
+								<option value="option1">15-18</option>
+								<option value="option2">18-21</option>
+								<option value="option3">21-24</option>
+								<option value="option4">24-27</option>
+								<option value="option5">27-30</option>
+								<option value="option6">30-33</option>
+								<option value="option7">33-36</option>
+								<option value="option8">36+</option>
+							</select>
 						</div>
 					</div>
 
