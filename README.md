@@ -3,14 +3,6 @@
 
 
 
-# Team Members
-* Cady Baltz (vaakfy)
-* Brian Truong (vaauwt)
-* Sruthi Rudravajjala (vaauwp)
-* Autumn Tan (yd5n)
-* Kennedy Middlebrooks (y90t)
-* Simeon Soname (vaauwh)
-* Hassana Saade (vaauwi)
 
 # Hack Description
 Our tool gives users bite-sized information about insurance—why you might need it, they different types that State Farm offers, and the best policies for you—all guided by Jake from State Farm! 
