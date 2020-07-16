@@ -7,6 +7,7 @@ import questions from './pages/questions';
 import AutoPage from './pages/AutoPage';
 import agents from './pages/agents'
 import categories from './pages/categories';
+import hello from './pages/hello';
 
 import React from 'react';
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Router>
       <div>
         <Switch>
+            <Route exact path="/hello" component={hello}/>
             <Route exact path="/strawberry" component={strawberry}/>
             <Route exact path="/template" component={template}/>
             <Route exact path="/" component={welcome}/>
