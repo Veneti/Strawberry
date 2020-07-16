@@ -12,8 +12,8 @@ const styles = (theme) => ({
 		textAlign: 'center', // <-- the magic
     fontWeight: 'bold',
     fontSize: 15,
-    marginTop: 0,
-    width: 400,
+    marginTop: 10,
+    paddingTop: 80,
     color: 'white', 
 	},
 });
