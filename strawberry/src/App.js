@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import strawberry from './pages/strawberry';
 import template from './pages/template';
+import welcome from './pages/welcome';
+import recommend from './pages/recommend';
 import explanation from './pages/explanation';
 import questions from './pages/questions';
 import AutoPage from './pages/AutoPage';
@@ -16,6 +18,8 @@ function App() {
         <Switch>
             <Route exact path="/strawberry" component={strawberry}/>
             <Route exact path="/template" component={template}/>
+            <Route exact path="/welcome" component={welcome}/>
+            <Route exact path="/recommend" component={recommend}/>
             <Route exact path="/explanation" component={explanation}/>
             <Route exact path="/questions" component={questions}/>
             <Route exact path="/AutoPage" component={AutoPage}/>
