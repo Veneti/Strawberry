@@ -55,7 +55,7 @@ class hello extends Component {
 							<label for="conv-textfield" class="-oneX-textfield__label"  style={{"font-family": 'Josefin Sans'}} >
 								What is your age?
 							</label>
-							<label for="name" class="-oneX-dropdown__floatingLabel"  style={{"font-family": 'Josefin Sans', 'padding-top': '22px' }} >
+							<label for="name" class="-oneX-dropdown__floatingLabel"  style={{"font-family": 'Josefin Sans'}} >
 								Age range
 							</label>
 							<select id="name" type="text" class="-oneX-dropdown"  style={{"font-family": 'Josefin Sans'}} >
