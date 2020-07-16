@@ -3,14 +3,11 @@ import strawberry from './pages/strawberry';
 import template from './pages/template';
 import welcome from './pages/welcome';
 import recommend from './pages/recommend';
-import explanation from './pages/explanation';
 import questions from './pages/questions';
 import AutoPage from './pages/AutoPage';
 import categories from './pages/categories';
 
 import React from 'react';
-
-
 function App() {
   return (
     <Router>
@@ -18,9 +15,8 @@ function App() {
         <Switch>
             <Route exact path="/strawberry" component={strawberry}/>
             <Route exact path="/template" component={template}/>
-            <Route exact path="/welcome" component={welcome}/>
+            <Route exact path="/" component={welcome}/>
             <Route exact path="/recommend" component={recommend}/>
-            <Route exact path="/explanation" component={explanation}/>
             <Route exact path="/questions" component={questions}/>
             <Route exact path="/AutoPage" component={AutoPage}/>
             <Route exact path="/categories" component={categories}/>

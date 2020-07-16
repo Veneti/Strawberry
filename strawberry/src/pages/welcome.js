@@ -19,7 +19,7 @@ class welcome extends Component {
 
 					<h1 class="animated-text">Welcome to Strawberry</h1>
           <h3 class="welcome-description">a bite-size intro to insurance</h3>
-          <a href="/template">
+          <a href="/questions">
   					<svg
   						width="209"
   						height="82"
