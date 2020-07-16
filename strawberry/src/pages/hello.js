@@ -11,16 +11,67 @@ const styles = (theme) => ({
 		position: "relative",
 		top: "50%",
 	},
+	header: {
+		textAlign: "center", // <-- the magic
+		fontWeight: "bold",
+		fontSize: 150,
+		marginTop: 10,
+		paddingTop: 80,
+		color: "red",
+	},
+	container: {
+		color: "red",
+		textAlign: "left",
+		fontWeight: "normal",
+		paddingLeft: 280,
+		paddingRight: 580,
+		paddingTop: 100,
+		fontSize: 50,
+	},
 });
 
 class hello extends Component {
 	render() {
+		const { classes } = this.props;
 		return (
 			<div>
-				<header className="App-header">
-					{/* <img src={Strawberry} className="App-logo" alt="logo" /> */}
-					<p>
-						Strawberry Squad!
+				<header className="welcome-header">
+					<header className={classes.header}>Hello!</header>
+					<div className={classes.container}>
+						<div class="-oneX-widget">
+							<label for="conv-textfield" class="-oneX-textfield__label">
+								Zip Code Location
+							</label>
+							<input
+								id="customMasked"
+								type="text"
+								class="-oneX-textfield--floating-input"
+							/>
+						</div>
+					</div>
+					<div className={classes.container}>
+						<div class="-oneX-widget">
+							<label for="conv-textfield" class="-oneX-textfield__label">
+								What is your age?
+							</label>
+									<label for="name" class="-oneX-dropdown__floatingLabel">
+										Age Group
+									</label>
+									<select id="name" type="text" class="-oneX-dropdown">
+										<option value=""></option>
+										<option value="option1">15-18</option>
+										<option value="option2">18-21</option>
+										<option value="option3">21-24</option>
+                    <option value="option4">24-27</option>
+                    <option value="option5">27-30</option>
+										<option value="option6">30-33</option>
+                    <option value="option7">33-36</option>
+                    <option value="option8">36+</option>
+									</select>
+						</div>
+					</div>
+
+					<div className={classes.container} style={{ align: "right" }}>
 						<a href="/questions">
 							<svg
 								width="209"
@@ -72,7 +123,7 @@ class hello extends Component {
 								</defs>
 							</svg>
 						</a>
-					</p>
+					</div>
 				</header>
 			</div>
 		);
