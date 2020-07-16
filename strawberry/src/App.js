@@ -5,6 +5,7 @@ import welcome from './pages/welcome';
 import recommend from './pages/recommend';
 import questions from './pages/questions';
 import AutoPage from './pages/AutoPage';
+import agents from './pages/agents'
 import categories from './pages/categories';
 
 import React from 'react';
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/questions" component={questions}/>
             <Route exact path="/AutoPage" component={AutoPage}/>
             <Route exact path="/categories" component={categories}/>
+            <Route exact path="/agents" component={agents}/>
         </Switch>
       </div>
     </Router>

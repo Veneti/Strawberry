@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
+import Container from "@material-ui/core/Container";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
@@ -14,6 +15,7 @@ import carCrash from "../images/carCrash.png";
 import comprehensive from "../images/comprehensive.jpg";
 import uninsured from "../images/uninsured.jpg";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import './questionStyles.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,10 +39,13 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: "20px",
   },
   size:{
-      width: "350px",
-      height: "330px",
+      width: "225px",
+      height: "225px",
       float:"left",
       marginLeft: "10px",
+  },
+  container: {
+    height: "80vh"
   },
   header: {
 	color: "#E11313",
@@ -75,14 +80,15 @@ export default function ReviewCard() {
 
   return (
     <div className={classes.rightside}>
+    <Container className={classes.container}>
     <h1 className={classes.header}>Categories</h1>
       <div className={classes.size}>
         <Card className={classes.root}>
-          <CardHeader title="Liabillity" />
+          <CardHeader title="Liability" />
           <CardMedia
             className={classes.media}
             image={infoCard}
-            title="liabillity"
+            title="liability"
           />
           <CardActions disableSpacing>
             <IconButton
@@ -106,7 +112,7 @@ export default function ReviewCard() {
                 - Protects you when YOU caused the accident
               </Typography>
               <Typography paragraph>
-                - Most important to pay extra for so you dont end up with out of
+                - Most important to pay extra for so you don't end up with out of
                 pocket fees
               </Typography>
             </CardContent>
@@ -139,10 +145,10 @@ export default function ReviewCard() {
             <CardContent>
               <Typography paragraph>Information:</Typography>
               <Typography paragraph>
-                - This covers the repais needed for your car when in an accident 
+                - This covers the repairs needed for your car when you get in an accident 
               </Typography>
               <Typography paragraph>
-                - "Older cars with low values do not benefit as much from collision coverage"
+                - Older cars with low values do not benefit as much from collision coverage
               </Typography>
               <Typography paragraph>
                 - Collision only recovers up to the value of the car at the point of damage
@@ -176,13 +182,13 @@ export default function ReviewCard() {
             <CardContent>
               <Typography paragraph>Information:</Typography>
               <Typography paragraph>
-                - This type of insureance covers incidents rather than accidents 
+                - This type of insurance covers incidents rather than accidents 
               </Typography>
               <Typography paragraph>
-                - For example weather damage will be covered uder this category but car crashes are not. 
+                - For example, weather damage will be covered under this category, but car crashes are not
               </Typography>
               <Typography paragraph>
-                - If your car is easily replaceable this may not be necessary 
+                - If your car is easily replaceable, this may not be necessary 
               </Typography>
             </CardContent>
           </Collapse>
@@ -225,8 +231,63 @@ export default function ReviewCard() {
         </Card>
       </div>
 
+ <div className="arrow2">
+      <a href="/agents">
+     
+    <svg 
 
+  						width="209"
+  						height="82"
+  						viewBox="0 0 209 82"
+  						fill="none"
+  						xmlns="http://www.w3.org/2000/svg"
+  					>
+  						<g filter="url(#filter0_d)">
+  							<path
+  								d="M203.536 40.5355C205.488 38.5829 205.488 35.4171 203.536 33.4645L171.716 1.64466C169.763 -0.30796 166.597 -0.30796 164.645 1.64466C162.692 3.59728 162.692 6.76311 164.645 8.71573L192.929 37L164.645 65.2843C162.692 67.2369 162.692 70.4027 164.645 72.3553C166.597 74.308 169.763 74.308 171.716 72.3553L203.536 40.5355ZM4 42L200 42L200 32L4 32L4 42Z"
+  								fill="#E11313"
+  							/>
+  						</g>
+  						<defs>
+  							<filter
+  								id="filter0_d"
+  								x="0"
+  								y="0.180176"
+  								width="209"
+  								height="81.6396"
+  								filterUnits="userSpaceOnUse"
+  								color-interpolation-filters="sRGB"
+  							>
+  								<feFlood flood-opacity="0" result="BackgroundImageFix" />
+  								<feColorMatrix
+  									in="SourceAlpha"
+  									type="matrix"
+  									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+  								/>
+  								<feOffset dy="4" />
+  								<feGaussianBlur stdDeviation="2" />
+  								<feColorMatrix
+  									type="matrix"
+  									values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+  								/>
+  								<feBlend
+  									mode="normal"
+  									in2="BackgroundImageFix"
+  									result="effect1_dropShadow"
+  								/>
+  								<feBlend
+  									mode="normal"
+  									in="SourceGraphic"
+  									in2="effect1_dropShadow"
+  									result="shape"
+  								/>
+  							</filter>
+  						</defs>
+  					</svg>
+					</a>
+        </div>
 
+    </Container>
     </div>
   );
 }
