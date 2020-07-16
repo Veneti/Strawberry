@@ -4,7 +4,7 @@ import "../App.css";
 
 const styles = (theme) => ({
 	example: {
-		color: "red",
+		color: "#E22925",
 		//text-align -> textAlign
 		textAlign: "center",
 		justifyContent: "center",
@@ -12,21 +12,22 @@ const styles = (theme) => ({
 		top: "50%",
 	},
 	header: {
-		textAlign: "center", // <-- the magic
+		textAlign: "left", // <-- the magic
 		fontWeight: "bold",
 		fontSize: 150,
-		marginTop: 10,
-		paddingTop: 80,
+		marginTop: 100,
+    marginLeft: 250,
 		color: "red",
 	},
 	container: {
 		color: "red",
 		textAlign: "left",
 		fontWeight: "normal",
-		paddingLeft: 280,
+		paddingLeft: 250,
 		paddingRight: 580,
-		paddingTop: 100,
+		paddingTop: 50,
 		fontSize: 50,
+    textShadow: "none",
 	},
 });
 
@@ -34,13 +35,13 @@ class hello extends Component {
 	render() {
 		const { classes } = this.props;
 		return (
-			<div>
+			<div className="hello-overall">
 				<header className="welcome-header">
 						<header className={classes.header}>Hello!</header>
 					<div className={classes.container}>
 						<div class="-oneX-widget">
-							<label for="conv-textfield" class="-oneX-textfield__label">
-								Zip Code Location
+							<label for="conv-textfield" class="-oneX-textfield__label" style={{"font-family": 'Josefin Sans'}} >
+								zip code location
 							</label>
 							<input
 								id="customMasked"
@@ -51,13 +52,13 @@ class hello extends Component {
 					</div>
 					<div className={classes.container}>
 						<div class="-oneX-widget">
-							<label for="conv-textfield" class="-oneX-textfield__label">
+							<label for="conv-textfield" class="-oneX-textfield__label"  style={{"font-family": 'Josefin Sans'}} >
 								What is your age?
 							</label>
-							<label for="name" class="-oneX-dropdown__floatingLabel">
-								Age Group
+							<label for="name" class="-oneX-dropdown__floatingLabel"  style={{"font-family": 'Josefin Sans', 'padding-top': '22px' }} >
+								Age range
 							</label>
-							<select id="name" type="text" class="-oneX-dropdown">
+							<select id="name" type="text" class="-oneX-dropdown"  style={{"font-family": 'Josefin Sans'}} >
 								<option value=""></option>
 								<option value="option1">15-18</option>
 								<option value="option2">18-21</option>
