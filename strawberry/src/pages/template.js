@@ -5,7 +5,10 @@ const styles = (theme) => ({
 	example: {
 		color: 'red',
 		//text-align -> textAlign
-		textAlign: 'center'
+		textAlign: 'center',
+		justifyContent: 'center',
+  		position: 'relative',
+  		top: '50%',
 	}
 });
 class template extends Component {
