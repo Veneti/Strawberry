@@ -30,6 +30,7 @@ class AutoPage extends Component {
       <div className={classes.center} >
         <h1 className={classes.header}>Auto Insurance</h1>
 		<div className={classes.rightside}>
+		<a href="/categories">
 		<svg 
   						width="209"
   						height="82"
@@ -79,7 +80,7 @@ class AutoPage extends Component {
   							</filter>
   						</defs>
   					</svg>
-		
+					</a>
 
 					  </div>
       </div>

@@ -31,6 +31,12 @@ class questions extends Component {
 		const { classes } = this.props;
 		return (
 			<div>
+				<Container className={classes.container}>
+                        <h1 className="header" style={{fontSize:"100px", color:"#f01716"}}>we're going to ask you a few questions to gauge your needs</h1>
+							<div>
+								<img src = {SpeechBubble1} style={speech} className={classes.cornerImage}/>
+							</div>
+               	</Container>
                 <Container className={classes.container}>
                         <h1 className="header" style={{fontSize:"100px", color:"#f01716"}}>do you own a car?</h1>
                         <div className="dropdown">
@@ -74,7 +80,7 @@ class questions extends Component {
 				<Container className={classes.container}>
 					<h1 className="header" style={{fontSize:"100px", color:"#f01716"}}>get my insurance advice</h1>
 					<div className="arrow">
-					<a href="/recommended">
+					<a href="/recommend">
   					<svg
   						width="209"
   						height="82"

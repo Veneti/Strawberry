@@ -9,11 +9,10 @@ import { withTheme } from "@material-ui/core";
 
 const styles = (theme) => ({
 	header: {
-		textAlign: 'center', // <-- the magic
+	textAlign: 'center', // <-- the magic
     fontWeight: 'bold',
     fontSize: 15,
     marginTop: 0,
-    width: 400,
     color: 'white', 
 	},
 });
@@ -28,14 +27,18 @@ class recommend extends Component {
 				
 				<div class="content">
 					<div class="circle">
+					<a href="/autopage">  {/*DO NOT DELETE THIS LINK*/}
 						<div class="circle_title">
 							<h2>Auto Insurance</h2>
 							<h3>Insured on all types of trains</h3>
 						</div>
+					</a>
+						
 						<div class="circle_inner">
-							<div class="circle_inner__layer">
-								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc1.png" />
-							</div>
+							
+								<div class="circle_inner__layer">
+									<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc1.png" />
+								</div>
 							<div class="circle_inner__layer">
 								<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/217233/pc2.png" />
 								{/* <img src={car} /> */}
